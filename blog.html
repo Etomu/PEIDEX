@@ -1,0 +1,2937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEIDEX - ecommerce website</title>
+
+    <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+<div class="modal" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+    <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        
+        <div class="newsletter-img">
+            <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+        </div>
+        
+        <div class="newsletter">
+            <form action="#">
+                <div class="newsletter-header">
+                    <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+                    <p class="newsletter-desc">
+                        Subscribe to <b>PeideX</b> to get latest products and discount update.
+                    </p>
+                </div>
+                <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+                <button type="submit" class="btn-newsletter">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/smalltable1.jpg" alt="Mini Round Iron-Art Table" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Mini Round Iron-Art Table
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+    <div class="header-top">
+        
+        <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week For Order Over - $50
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo3.png" alt="PEIDEX" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+        <div class="container">
+  
+          <ul class="desktop-menu-category-list">
+  
+            <li class="menu-category">
+              <a href="index.html" class="menu-title">Home</a>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Categories</a>
+  
+              <div class="dropdown-panel">
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Electronics</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Desktop & Smart TV</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Laptop & Mouse & Keyboards</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Camera & Microphone</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Smart Phones & Tablets</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Headphone & Smart-watches</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                        height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Home Decor</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Home Furnitures</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Wall Decorations</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Smart Home & Surveillance System</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Wall Lamps</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Vases & Candle & Holders</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Kitchen</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Kitchen Appliance</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Cookwares & Bakeware</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Tableware & Drinkware</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Storage bottles & Jars</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Hanger & Racks</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+
+                <ul class="dropdown-panel-list">
+  
+                    <li class="menu-title">
+                      <a href="#">Lightings</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Wall Lamps</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Night Lamps</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Table Lamps</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Ceiling & Down-lights</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Chandeliers & Pendants Lights</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                      </a>
+                    </li>
+    
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+  
+                    <li class="menu-title">
+                      <a href="#">Home Textiles</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Bedding Sets</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Carpets & Rugs</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Curtains & Tapestry</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Pillows & Cushion</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">Blankets & Towels</a>
+                    </li>
+    
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                      </a>
+                    </li>
+    
+                  </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Home Storage</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Home Storage Products</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Clothing Storage & Boxes</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Bathroom Storage & Accessories</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Personal-care Appliances</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Cleaning Appliances</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+              </div>
+
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Electronics</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Desktop & Smart TV</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Laptop & Mouse-Keyboards</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Camera & Microphone</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Smart Phones & Tablets</a>
+                </li>
+
+                <li class="dropdown-item">
+                    <a href="#">Headphone & Smart-watches</a>
+                  </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home Decor</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Home Furnitures</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Wall Decorations</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Smart Home & Surveillance System</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Vases & Candle/Holders</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Kitchen</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Kitchen Appliance</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Cookwares & Bakeware</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Tableware & Drinkware</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Storage bottles & Jars</a>
+                </li>
+
+                <li class="dropdown-item">
+                    <a href="#">Hanger & Racks</a>
+                  </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Lightings</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Wall Lamps</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Night Lamps</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Table Lamps</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Ceiling & Down-lights</a>
+                </li>
+
+                <li class="dropdown-item">
+                    <a href="#">Chandeliers & Pendants Lights</a>
+                  </li>
+  
+              </ul>
+            </li>
+
+            <li class="menu-category">
+                <a href="#" class="menu-title">Home Textile</a>
+    
+                <ul class="dropdown-list">
+    
+                  <li class="dropdown-item">
+                    <a href="#">Bedding Sets</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Carpets & Rugs</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Curtains & Tapestry</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Pillows & Cushion</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Blankets & Towels</a>
+                  </li>
+    
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Home Storage</a>
+    
+                <ul class="dropdown-list">
+    
+                  <li class="dropdown-item">
+                    <a href="#">Home Storage Products</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Clothing Storage & Boxes</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Bathroom Storage & Accessories</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#">Personal-care Appliances</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Cleaning Appliances</a>
+                  </li>
+    
+                </ul>
+              </li>
+  
+            <li class="menu-category">
+              <a href="blog.html" class="menu-title">Blog</a>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Hot Offers</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+  
+      <div class="mobile-bottom-navigation">
+  
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+  
+          <span class="count">0</span>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+  
+          <span class="count">0</span>
+        </button>
+  
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+  
+      </div>
+
+      <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+  
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+  
+        <ul class="mobile-menu-category-list">
+  
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Electronics</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Desktop & Smart TV</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Smart Phones & Tablets</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Laptop & Keyboards</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Headphone & Watches</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Home Decor</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Home Furnitures</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Wall Decorations</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Surveillance System</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Wall Lamps</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Lightings</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Wall Lamps</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Night Lamps</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Table Lamps</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Chandeliers</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Kitchen</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Kitchen Appliance</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Cookwares</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Tableware & Drinkware</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Hanger & Racks</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Home Textiles</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Bedding Sets</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Carpets & Rugs</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Curtains & Tapestry</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Pillows & Cushion</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Home Storage</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Home Storage Products</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Cleaning Appliances</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Bathroom Accessories</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Personal-care Appliances</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+            <a href="blog.html" class="menu-title">Blog</a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+  
+        </ul>
+  
+        <div class="menu-bottom">
+  
+          <ul class="menu-category-list">
+  
+            <li class="menu-category">
+  
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Language</p>
+  
+                <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+              </button>
+  
+              <ul class="submenu-category-list" data-accordion>
+  
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">English</a>
+                </li>
+  
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+                </li>
+  
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Fren&ccedil;h</a>
+                </li>
+  
+              </ul>
+  
+            </li>
+  
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Currency</p>
+                <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+              </button>
+  
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">USD &dollar;</a>
+                </li>
+  
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">EUR &euro;</a>
+                </li>
+              </ul>
+            </li>
+  
+          </ul>
+  
+          <ul class="menu-social-container">
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+  
+    </header>
+
+
+    <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+        <div class="container">
+  
+          <div class="category-item-container has-scrollbar">
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/chairs.svg" alt="dress & frock" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Home Furnitures</h3>
+  
+                  <p class="category-item-amount">(4502)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/surveillancecamera.svg" alt="winter wear" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Surveillance System</h3>
+  
+                  <p class="category-item-amount">(58)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/device.svg" alt="glasses & lens" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Electronic Devices</h3>
+  
+                  <p class="category-item-amount">(68)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/watch.svg" alt="shorts & jeans" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Wrist Watches</h3>
+  
+                  <p class="category-item-amount">(84)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/walllights.svg" alt="t-shirts" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Wall Lamps</h3>
+  
+                  <p class="category-item-amount">(35)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/towels.svg" alt="jacket" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Blankets & Towels</h3>
+  
+                  <p class="category-item-amount">(16)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/clothanger.svg" alt="watch" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Clothes Hangers</h3>
+  
+                  <p class="category-item-amount">(27)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="category-item">
+  
+              <div class="category-img-box">
+                <img src="./assets/images/icons/curtains.svg" alt="hat & caps" width="30">
+              </div>
+  
+              <div class="category-content-box">
+  
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Curtains</h3>
+  
+                  <p class="category-item-amount">(39)</p>
+                </div>
+  
+                <a href="#" class="category-btn">View all</a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+
+      <!--
+        - PRODUCT
+      -->
+  
+      <div class="product-container">
+  
+        <div class="container">
+    
+          <!--
+            - SIDEBAR
+          -->
+  
+          <div class="sidebar  has-scrollbar" data-mobile-menu>
+  
+            <div class="sidebar-category">
+  
+              <div class="sidebar-top">
+                <h2 class="sidebar-title">Category</h2>
+  
+                <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+  
+              <ul class="sidebar-menu-category-list">
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/device.svg" alt="clothes" width="20" height="20"
+                        class="menu-title-img">
+  
+                      <p class="menu-title">Electronics</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Desktop & Smart TV</p>
+                        <data value="300" class="stock" title="Available Stock">300</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Smart Phones & Tablets</p>
+                        <data value="60" class="stock" title="Available Stock">60</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Laptop & Mouse & Keyboards</p>
+                        <data value="50" class="stock" title="Available Stock">50</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Headphone & Smart-watches</p>
+                        <data value="87" class="stock" title="Available Stock">87</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/home.svg" alt="footwear" class="menu-title-img" width="20"
+                        height="20">
+  
+                      <p class="menu-title">Home Decor</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Home Furnitures</p>
+                        <data value="45" class="stock" title="Available Stock">45</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Smart Home System</p>
+                        <data value="75" class="stock" title="Available Stock">75</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Wall Decorations</p>
+                        <data value="35" class="stock" title="Available Stock">35</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Wall Lamps</p>
+                        <data value="26" class="stock" title="Available Stock">26</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/kitchencooker.svg" alt="clothes" class="menu-title-img" width="20"
+                        height="20">
+  
+                      <p class="menu-title">Kitchen</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Kitchen Appliance</p>
+                        <data value="46" class="stock" title="Available Stock">46</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Cookwares & Bakeware</p>
+                        <data value="73" class="stock" title="Available Stock">73</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Storage bottles & Jars</p>
+                        <data value="61" class="stock" title="Available Stock">61</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/light.svg" alt="perfume" class="menu-title-img" width="20"
+                        height="20">
+  
+                      <p class="menu-title">Lightings</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Night Lamps</p>
+                        <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Table Lamps</p>
+                        <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Ceiling & Down-lights</p>
+                        <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Chandeliers & Pendants Lights</p>
+                        <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/decorativepillow.svg" alt="cosmetics" class="menu-title-img" width="20"
+                        height="20">
+  
+                      <p class="menu-title">Home Textiles</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Carpets & Rugs</p>
+                        <data value="68" class="stock" title="Available Stock">68</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Curtains & Tapestry</p>
+                        <data value="46" class="stock" title="Available Stock">46</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Blankets & Towels</p>
+                        <data value="79" class="stock" title="Available Stock">79</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Pillows & Cushion</p>
+                        <data value="23" class="stock" title="Available Stock">23</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/bookshelf.svg" alt="glasses" class="menu-title-img" width="20"
+                        height="20">
+  
+                      <p class="menu-title">Home Storage</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Home Storage Products</p>
+                        <data value="50" class="stock" title="Available Stock">50</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Clothing Storage & Boxes</p>
+                        <data value="48" class="stock" title="Available Stock">48</data>
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Cleaning Appliances</p>
+                          <data value="48" class="stock" title="Available Stock">48</data>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Bathroom Storage & Accessories</p>
+                          <data value="48" class="stock" title="Available Stock">48</data>
+                        </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+                <li class="sidebar-menu-category">
+  
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                    <div class="menu-title-flex">
+                      <img src="./assets/images/icons/bedroom.svg" alt="bags" class="menu-title-img" width="20" height="20">
+  
+                      <p class="menu-title">Bedroom Furnitures</p>
+                    </div>
+  
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+  
+                  </button>
+  
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Bedside Tables</p>
+                        <data value="62" class="stock" title="Available Stock">62</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Bedside Lamps</p>
+                        <data value="35" class="stock" title="Available Stock">35</data>
+                      </a>
+                    </li>
+  
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Bean Bags</p>
+                        <data value="80" class="stock" title="Available Stock">80</data>
+                      </a>
+                    </li>
+  
+                  </ul>
+  
+                </li>
+  
+              </ul>
+  
+            </div>
+  
+            <div class="product-showcase">
+  
+              <h3 class="showcase-heading">Best sellers</h3>
+  
+              <div class="showcase-wrapper">
+  
+                <div class="showcase-container">
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/pushpillow6.jpg" alt="Sofa Spherical Lamb Wool Cushion" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">Sofa Spherical Lamb Wool Cushion</h4>
+                      </a>
+  
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+  
+                      <div class="price-box">
+                        <del>$74.59</del>
+                        <p class="price">$44.59</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/beanbag5.jpg" alt="Lazy Inflatable Folding Bean Bag" class="showcase-img"
+                        width="75" height="75">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">Lazy Inflatable Folding Bean Bag</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+  
+                      <div class="price-box">
+                        <del>$71.08</del>
+                        <p class="price">$51.08</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/storagebox3.jpg" alt="Glass Fruit Snack Box" class="showcase-img" width="75"
+                        height="75">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">Glass Fruit Snack Box</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+  
+                      <div class="price-box">
+                        <del>$55.09</del>
+                        <p class="price">$43.02</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Faucet1.jpg" alt="Automatic High-pressure Faucet" class="showcase-img" width="75"
+                        height="75">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">Automatic High-pressure Faucet</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+  
+                      <div class="price-box">
+                        <del>$75.59</del>
+                        <p class="price">$43.59</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="product-box">
+  
+            <!--
+              - PRODUCT FEATURED
+            -->
+  
+            <div class="product-featured">
+  
+              <h2 class="title">Popular Post</h2>
+  
+              <div class="showcase-wrapper has-scrollbar">
+  
+                <div class="showcase-container">
+  
+                  <div class="showcase">
+                    
+                    <div class="showcase-banner">
+                      <img src="./assets/images/products/chair1.jpg" alt="Study Swivel Eggshell Chair" class="showcase-img">
+                    </div>
+  
+                    <div class="showcase-content">
+
+  
+                      <a href="#">
+                        <h3 class="showcase-title">Study Swivel Eggshell Chair</h3>
+                      </a>
+  
+                      <p class="showcase-desc">
+                        The perfect chair for any study, the Study Swivel Eggshell Chair provides all-day comfort with its ergonomic, adjustable design. The 360° swivel action makes it easy to move around for enhanced productivity. Get your best work done with this stylish yet functional chair!
+                      </p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <div class="showcase-banner">
+                      <img src="./assets/images/products/tablesm4.jpg" alt="Living Room Small Coffee Table" class="showcase-img">
+                    </div>
+                
+                    <div class="showcase-content">
+                
+                      <h3 class="showcase-title">
+                        <a href="#" class="showcase-title">Living Room Small Coffee Table</a>
+                      </h3>
+                
+                      <p class="showcase-desc">
+                        Product information:
+                        Product Category: Coffee table
+                        Material: wood-based panel
+                        Style: Modern and simple
+                        End table corner shape: square
+                        Structure technology: wood-based panel technology
+                        Finish material: wood-based panel
+                        Surface material: wood-based board
+                        Double layer 120x58x42cm warm white
+                      </p>                      
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <!--
+              - PRODUCT GRID
+            -->
+  
+            <div class="product-main">
+  
+              <h2 class="title">BLOG POSTS</h2>
+  
+              <div class="product-grid">
+  
+                <div class="showcase">
+  
+                  <div class="showcase-banner">
+  
+                    <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                    <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+  
+                    <p class="showcase-badge">BLOG</p>
+  
+                    <div class="showcase-actions">
+  
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+  
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="#" class="showcase-category">PEIDEX</a>
+  
+                    <a href="#">
+                      <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                    </a>
+
+                    <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                    </a>
+  
+                  </div>
+  
+                </div>
+
+                <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+
+                  <div class="showcase">
+  
+                    <div class="showcase-banner">
+    
+                      <img src="./assets/images/blog-1.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
+                      <img src="./assets/images/blog-2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
+    
+                      <p class="showcase-badge">BLOG</p>
+    
+                      <div class="showcase-actions">
+    
+                        <button class="btn-action">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+    
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="showcase-content">
+    
+                      <a href="#" class="showcase-category">PEIDEX</a>
+    
+                      <a href="#">
+                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+  
+                      <a href="#">
+                          <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
+                      </a>
+    
+                    </div>
+    
+                  </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <!--
+        - TESTIMONIALS, CTA & SERVICE
+      -->
+  
+      <div>
+  
+        <div class="container">
+  
+          <div class="testimonials-box">
+  
+            <!--
+              - TESTIMONIALS
+            -->
+  
+            <div class="testimonial">
+  
+              <h2 class="title">Testimonial</h2>
+  
+              <div class="testimonial-card">
+  
+                <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+  
+                <p class="testimonial-name">Mr Patrick</p>
+  
+                <p class="testimonial-title">CEO & Founder Invision</p>
+  
+                <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+  
+                <p class="testimonial-desc">
+                  Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.
+                </p>
+  
+              </div>
+  
+            </div>
+  
+            <!--
+              - CTA
+            -->
+  
+            <div class="cta-container">
+  
+              <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+  
+              <a href="#" class="cta-content">
+  
+                <p class="discount">25% Discount</p>
+  
+                <h2 class="cta-title">Winter Collection</h2>
+  
+                <p class="cta-text">Starting @ $75.95</p>
+  
+                <button class="cta-btn">Shop now</button>
+  
+              </a>
+  
+            </div>
+  
+            <!--
+              - SERVICE
+            -->
+  
+            <div class="service">
+  
+              <h2 class="title">Our Services</h2>
+  
+              <div class="service-container">
+  
+                <a href="#" class="service-item">
+  
+                  <div class="service-icon">
+                    <ion-icon name="boat-outline"></ion-icon>
+                  </div>
+  
+                  <div class="service-content">
+  
+                    <h3 class="service-title">Worldwide Delivery</h3>
+                    <p class="service-desc">For Order Over $80</p>
+  
+                  </div>
+  
+                </a>
+  
+                <a href="#" class="service-item">
+                
+                  <div class="service-icon">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+                
+                  <div class="service-content">
+                
+                    <h3 class="service-title">15 Business Day delivery</h3>
+                    <p class="service-desc">Only For Orders To EUROPE AND USA</p>
+                
+                  </div>
+                
+                </a>
+  
+                <a href="#" class="service-item">
+                
+                  <div class="service-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+                
+                  <div class="service-content">
+                
+                    <h3 class="service-title">Best Online Support</h3>
+                    <p class="service-desc">Hours: 8AM - 11PM</p>
+                
+                  </div>
+                
+                </a>
+  
+                <a href="#" class="service-item">
+                
+                  <div class="service-icon">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                  </div>
+                
+                  <div class="service-content">
+                
+                    <h3 class="service-title">Return Policy</h3>
+                    <p class="service-desc">Easy & Free Return</p>
+                
+                  </div>
+                
+                </a>
+  
+                <a href="#" class="service-item">
+                
+                  <div class="service-icon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                  </div>
+                
+                  <div class="service-content">
+                
+                    <h3 class="service-title">30% money back</h3>
+                    <p class="service-desc">For Order Over $1000</p>
+                
+                  </div>
+                
+                </a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <!--
+        - BLOG
+      -->
+  
+      <div class="blog">
+  
+        <div class="container">
+  
+          <div class="blog-container has-scrollbar">
+  
+            <div class="blog-card">
+  
+              <a href="#">
+                <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+              </a>
+  
+              <div class="blog-content">
+  
+                <a href="#" class="blog-category">Fashion</a>
+  
+                <a href="#">
+                  <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
+                </a>
+  
+                <p class="blog-meta">
+                  By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+                </p>
+  
+              </div>
+  
+            </div>
+  
+            <div class="blog-card">
+            
+              <a href="#">
+                <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                  class="blog-banner" width="300">
+              </a>
+            
+              <div class="blog-content">
+            
+                <a href="#" class="blog-category">Clothes</a>
+            
+                <h3>
+                  <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+                </h3>
+            
+                <p class="blog-meta">
+                  By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+                </p>
+            
+              </div>
+            
+            </div>
+  
+            <div class="blog-card">
+            
+              <a href="#">
+                <img src="./assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                  class="blog-banner" width="300">
+              </a>
+            
+              <div class="blog-content">
+            
+                <a href="#" class="blog-category">Shoes</a>
+            
+                <h3>
+                  <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
+                </h3>
+            
+                <p class="blog-meta">
+                  By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+                </p>
+            
+              </div>
+            
+            </div>
+  
+            <div class="blog-card">
+            
+              <a href="#">
+                <img src="./assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                  class="blog-banner" width="300">
+              </a>
+            
+              <div class="blog-content">
+            
+                <a href="#" class="blog-category">Electronics</a>
+            
+                <h3>
+                  <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+                </h3>
+            
+                <p class="blog-meta">
+                  By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+                </p>
+            
+              </div>
+            
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </main>
+  
+    <!--
+      - FOOTER
+    -->
+  
+    <footer>
+  
+      <div class="footer-category">
+  
+        <div class="container">
+  
+          <h2 class="footer-category-title">Brand directory</h2>
+  
+          <div class="footer-category-box">
+  
+            <h3 class="category-box-title">Electronics :</h3>
+  
+            <a href="#" class="footer-category-link">Desktop</a>
+            <a href="#" class="footer-category-link">Smart Tv</a>
+            <a href="#" class="footer-category-link">Laptop</a>
+            <a href="#" class="footer-category-link">Smart Phones</a>
+            <a href="#" class="footer-category-link">Tablets</a>
+            <a href="#" class="footer-category-link">Headphones</a>
+            <a href="#" class="footer-category-link">Smart Watches</a>
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Home Decor :</h3>
+          
+            <a href="#" class="footer-category-link">Home Furnitures</a>
+            <a href="#" class="footer-category-link">Wall Decorations</a>
+            <a href="#" class="footer-category-link">Smart Home System</a>
+            <a href="#" class="footer-category-link">Surveillance System</a>
+            <a href="#" class="footer-category-link">Vases & Candles</a>
+            <a href="#" class="footer-category-link">Home Appliances</a>
+            <a href="#" class="footer-category-link">Personal-care Appliances</a>
+            <a href="#" class="footer-category-link">Carpets & Rugs</a>
+            <a href="#" class="footer-category-link">Curtains & Tapestry</a>
+            <a href="#" class="footer-category-link">Clothing Storage & Boxes</a>
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Lightings :</h3>
+          
+            <a href="#" class="footer-category-link">Wall Lamp</a>
+            <a href="#" class="footer-category-link">Table Lamp</a>
+            <a href="#" class="footer-category-link">Ceiling Lights</a>
+            <a href="#" class="footer-category-link">Pendant lights</a>
+            <a href="#" class="footer-category-link">Chandeliers</a>
+            <a href="#" class="footer-category-link">Downlights</a>
+            <a href="#" class="footer-category-link">Floor Lamp</a>
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Kitchen :</h3>
+          
+            <a href="#" class="footer-category-link">Kitchen Appliances</a>
+            <a href="#" class="footer-category-link">Cookwares</a>
+            <a href="#" class="footer-category-link">Bakewares</a>
+            <a href="#" class="footer-category-link">Drinkware</a>
+            <a href="#" class="footer-category-link">Kitchen Hangers</a>
+            <a href="#" class="footer-category-link">Kitchen Racks</a>
+            <a href="#" class="footer-category-link">Tablewares</a>
+            <a href="#" class="footer-category-link">Storage Bottles & Jars</a>
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Home Textiles & Storages :</h3>
+          
+            <a href="#" class="footer-category-link">Bedding Sets</a>
+            <a href="#" class="footer-category-link">Pillows & Cushions</a>
+            <a href="#" class="footer-category-link">Blankets & Towels</a>
+            <a href="#" class="footer-category-link">Home Storage Products</a>
+            <a href="#" class="footer-category-link">Clothing Storage & Boxes</a>
+            <a href="#" class="footer-category-link">Bathroom Storage & Accessories</a>
+            <a href="#" class="footer-category-link">Personal-care Appliances</a>
+            <a href="#" class="footer-category-link">Cleaning Appliances</a>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="footer-nav">
+  
+        <div class="container">
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Categories</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Electronics</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Home Decor</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Lightings</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Kitchen</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Home Textiles</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Delivery</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legal Notice</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">About us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Secure payment</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+  
+              <address class="content">
+                419 State 414 Rte
+                Beaver Dams, New York(NY), 14812, USA
+              </address>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+  
+              <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+  
+              <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+  
+            <li>
+              <ul class="social-link">
+  
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+  
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+  
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+  
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+  
+              </ul>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+  
+      <div class="footer-bottom">
+  
+        <div class="container">
+  
+          <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+  
+          <p class="copyright">
+            Copyright &copy; <a href="#">Anon</a> all rights reserved.
+          </p>
+  
+        </div>
+  
+      </div>
+  
+    </footer>
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/chairs.svg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Home Furnitures</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">View all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/surveillancecamera.svg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Surveillance System</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">View all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/device.svg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Electronic Devices</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">View all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/watch.svg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Wrist Watches</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/walllights.svg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Wall Lamp</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/towels.svg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Blankets & Towels</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/clothanger.svg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Clothes Hangers</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/curtains.svg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Curtains</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
