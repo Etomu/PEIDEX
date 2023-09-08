@@ -1,0 +1,220 @@
+.contact__container {
+    max-width: 100%;
+    background: hsl(0, 0%, 93%);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 37rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.sidebar {
+    display: none;
+}
+
+/* *************** ASIDE *************** */
+.contact__aside {
+    max-width: 50%;
+    height: 47rem;
+    background: hsl(0, 100%, 100%);
+    box-shadow: 1rem 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact__aside p {
+    max-width: 95%;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact__socials a {
+    background: hsl(37.6,100%,72.7%);
+    color: hsl(0, 100%, 100%);
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.contact__socials a:hover {
+    background: hsl(0, 0%, 93%);;
+    color: #000;
+}
+
+/* *************** FORM *************** */
+.contact h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contact form {
+    max-width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: .0.9rem;
+    color: hsl(0, 0%, 13%);
+    background: hsl(0, 100%, 100%);
+    border-radius: .8rem;
+    margin: .1rem 0;
+}
+
+.contact form .input-box input {
+    font-size: 0.9rem;
+    width: 99%;
+}
+
+.contact form textarea {
+    font-size: 0.9rem;
+    resize: none;
+}
+
+.contact form .btn {
+    background: none;
+    width: 50%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    font-weight: 900;
+    font: inherit;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.contact form .btn:hover {
+    margin-top: .1rem;
+    color: hsl(0, 0%, 93%);
+    cursor: pointer;
+    background: hsl(37.6,100%,72.7%);
+}
+
+.testimonials-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 8rem;
+    gap: 30px;
+}
+
+/* *************** MEDIA QUERIES (TABLETS) *************** */
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 300rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* *************** MEDIA QUERIES (PHONES) *************** */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .contact__aside {
+        max-width: 1%;
+        margin-top: 2rem;
+    }
+
+    .product-container .container {
+        display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 8rem;
+    gap: 3px;
+    }
+
+    .contact__aside p {
+        max-width: 100%;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .form__name {
+        flex-direction: row;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
