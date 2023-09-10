@@ -1,0 +1,27 @@
+.product-main { margin-bottom: 30px; }
+
+.product-main .showcase-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.product-main .showcase-container {
+  min-width: 100%;
+  padding: 30px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  scroll-snap-align: start;
+}
+
+.product-main .showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-main .showcase-content { margin-top: 30px; }
+
