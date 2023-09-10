@@ -1,0 +1,109 @@
+.product-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 3rem;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.about__details {
+    max-width: 90%;
+}
+.contact__details {
+    max-width: 100%;
+}
+
+.about__details h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+.contact__details h2 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.about__details p {
+    font-size: 15px;
+}
+
+.contact__details p {
+    font-size: 15px;
+}
+
+/* *************** MEDIA QUERIES (TABLETS) *************** */
+@media screen and (max-width: 1024px) {
+    .product-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 3rem;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .about__details {
+        max-width: 90%;
+    }
+    .contact__details {
+        max-width: 100%;
+    }
+    
+    .about__details h2 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+    .contact__details h2 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+    
+    .about__details p {
+        font-size: 15px;
+    }
+    .contact__details p {
+        font-size: 15px;
+    }
+}
+
+/* *************** MEDIA QUERIES (PHONES) *************** */
+@media screen and (max-width: 600px) {
+    .product-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 3rem;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .about__details {
+        max-width: 90%;
+    }
+    .contact__details {
+        max-width: 100%;
+    }
+    
+    .about__details h2 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+    .contact__details h2 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+    
+    .about__details p {
+        font-size: 15px;
+    }
+    .contact__details p {
+        font-size: 15px;
+    }
+}
