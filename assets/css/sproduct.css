@@ -109,7 +109,7 @@ p {
     .product-box .small__container {
         max-width: 1500px;
         margin: auto;
-        padding-left: 0;
+        padding-left: 15px;
         padding-right: 120px;
     }
 }
