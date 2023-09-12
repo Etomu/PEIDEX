@@ -104,3 +104,9 @@ p {
     padding: 10px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .product-box .single-product .col-2 {
+        padding: 0;
+    }
+}
