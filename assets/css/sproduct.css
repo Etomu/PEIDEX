@@ -106,7 +106,10 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .product-box .single-product .col-2 {
-        padding: 0;
+    .product-box .small__container {
+        max-width: 1500px;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 120px;
     }
 }
