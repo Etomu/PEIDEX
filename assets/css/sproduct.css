@@ -72,17 +72,17 @@
     font-size: 20px;
     margin-right: 10px;
     margin-top: 10px;
-    border: 1px solid #ffcb74;
+    border: 1px solid hsl(29, 90%, 65%);
 }
 input:focus {
     outline: none;
 }
 a {
     text-decoration: none;
-    color: #ffcb74;
+    color: hsl(29, 90%, 65%);
 }
 p {
-    color: #555;
+    color: hsl(0, 0%, 27%);
 }
 .btn {
     display: inline-block;
@@ -105,11 +105,79 @@ p {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .product-box .small__container {
         max-width: 1500px;
         margin: auto;
-        padding-left: 15px;
-        padding-right: 120px;
+        padding-right: 80px;
+    }
+    .product-box .single-product .col-2 {
+        padding: 20px;
+    }
+    
+    .product-box .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .product-box .col-2 h1 {
+        font-size: 15px;
+        line-height: normal;
+        margin: 25px 0;
+    }
+    .product-box .col-2 p {
+        font-size: 10px;
+    }
+    .product-box .col-2 p span {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .product-box .col-2 p .bread__crumb {
+        display: inline;
+        color: hsl(0, 0%, 13%);
+    }
+    .product-box .col-2 p .bread__crumb:hover {
+        color: hsl(29, 90%, 65%);
+    }
+    .product-box .col-2 h4 {
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .product-box .col-2 h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .product-box .col-2 input {
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 12px;
+        margin-right: 10px;
+        margin-top: 10px;
+        border: 1px solid #ffcb74;
+    }
+    input:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: #ffcb74;
+    }
+    .btn {
+        display: inline-block;
+        color: hsl(0, 0%, 100%);
+        background: hsl(29, 90%, 65%);
+        font-size: 13px;
+        font-weight: bold;
+        padding: 8px 30px;
+        margin: 10px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+    .product-box .single-product select {
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
     }
 }
