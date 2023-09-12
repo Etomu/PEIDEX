@@ -1,0 +1,106 @@
+.product-box .small__container {
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.product-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box .single-product {
+    margin-top: 80px;
+}
+.product-box .small-img-row {
+    display: flex;
+    justify-content: space-around;
+}
+.product-box .col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+.product-box .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.product-box .single-product .col-2 img {
+    padding: 0;
+}
+.product-box .single-product .col-2 {
+    padding: 20px;
+}
+
+.product-box .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.product-box .col-2 h1 {
+    font-size: 20px;
+    line-height: normal;
+    margin: 25px 0;
+}
+.product-box .col-2 p {
+    font-size: 15px;
+}
+.product-box .col-2 p span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.product-box .col-2 p .bread__crumb {
+    display: inline;
+    color: hsl(0, 0%, 13%);
+}
+.product-box .col-2 p .bread__crumb:hover {
+    color: hsl(29, 90%, 65%);
+}
+.product-box .col-2 h4 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.product-box .col-2 h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.product-box .col-2 input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #ffcb74;
+}
+input:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #ffcb74;
+}
+p {
+    color: #555;
+}
+.btn {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    background: hsl(29, 90%, 65%);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 30px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background: hsl(0, 0%, 93%);
+    color: hsl(0, 0%, 13%);;
+}
+.product-box .single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
