@@ -107,3 +107,32 @@ for (let i = 0; i < accordionBtn.length; i++) {
   {
     ProductImg.src = SmallImg[3].src;
   }
+
+// script.js
+const addToCartButtons = document.querySelectorAll('.add-cart-btn');
+const popup = document.getElementById('popup');
+const popupImage = document.getElementById('popup-image');
+const popupName = document.getElementById('popup-name');
+const popupQuantity = document.getElementById('popup-quantity');
+
+function openPopup(imageSrc, productName, productQuantity) {
+    popupImage.src = imageSrc;
+    popupName.textContent = productName;
+    popupQuantity.textContent = productQuantity;
+    popup.style.display = 'block';
+}
+
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+addToCartButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const product = {
+            imageSrc: `product${index + 1}.jpg`,
+            productName: `Product ${index + 1}`,
+            productQuantity: '1', // You can update this dynamically based on your logic
+        };
+        openPopup(product.imageSrc, product.productName, product.productQuantity);
+    });
+});
