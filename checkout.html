@@ -14,8 +14,10 @@
       href="./assets/images/logo/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
 
     <!--
     - custom css link
@@ -24,7 +26,6 @@
     <link rel="stylesheet" href="./assets/css/destop.css" />
     <link rel="stylesheet" href="./assets/css/sproduct.css" />
     <link rel="stylesheet" href="./assets/css/checkout.css" />
-
 
     <!--
     - google font link
@@ -209,7 +210,7 @@
         <div class="container">
           <ul class="desktop-menu-category-list">
             <li class="menu-category">
-              <a href="index.html" class="menu-title">Home</a>
+              <a href="home.html" class="menu-title">Home</a>
             </li>
 
             <li class="menu-category">
@@ -644,7 +645,7 @@
 
         <ul class="mobile-menu-category-list">
           <li class="menu-category">
-            <a href="index.html" class="menu-title">Home</a>
+            <a href="home.html" class="menu-title">Home</a>
           </li>
 
           <li class="menu-category">
@@ -1699,134 +1700,242 @@
 
           <div class="product-box">
             <div class="wrapper">
-                <h2>Delivery Info</h2>
-                <form action="" method="post">
-                    <!--Account Information Start-->
-                    <h4>Shipping Address</h4>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="First Name" required class="name">
-                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
-                        </div>
-                        <div class="input_box">
-                            <input type="text" placeholder="Last Name" required class="name">
-                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="email" placeholder="Email" required class="name">
-                            <i class="icon"><ion-icon name="mail-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="Address" required class="name">
-                            <i class="icon"><ion-icon name="location-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="Apartment, Suite, etc, (optional)" class="name">
-                            <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="City" required class="name">
-                            <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="Phone (optional)" required class="name">
-                            <i class="icon"><ion-icon name="call-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="text" placeholder="Postcode" required class="name">
-                            <i class="icon"><ion-icon name="locate-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <!--Account Information End-->
-        
-        
-                    <!--DOB & Gender Start-->
-                    <div class="input_group">
-                        <div class="input_box">
-                            <h4>Date Of Birth</h4>
-                            <input type="text" placeholder="DD" required class="dob">
-                            <input type="text" placeholder="MM" required class="dob">
-                            <input type="text" placeholder="YYYY" required class="dob">
-                        </div>
-                        <div class="input_box">
-                            <h4>Gender</h4>
-                            <input type="radio" name="gender" class="radio" id="b1" checked>
-                            <label for="b1">Male</label>
-                            <input type="radio" name="gender" class="radio" id="b2">
-                            <label for="b2">Female</label>
-                        </div>
-                    </div>
-                    <!--DOB & Gender End-->
-        
-                    <!--Payment Details Start-->
-                    <div class="input_group">
-                        <div class="input_box">
-                            <h4>Payment Details</h4>
-                            <input type="radio" name="pay" class="radio" id="bc1" checked>
-                            <label for="bc1"><span>
-                                    <i></i>Credit Card</span></label>
-                            <input type="radio" name="pay" class="radio" id="bc2">
-                            <label for="bc2"><span>
-                                    <i></i>Paypal</span></label>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="tel" name="" class="name" placeholder="Name on Card" required>
-                            <i class="icon"><ion-icon name="card-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="tel" name="" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
-                            <i class="icon"><ion-icon name="card-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <input type="tel" name="" class="name" placeholder="CVC 632" required>
-                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div class="input_group">
-                        <div class="input_box">
-                            <div class="input_box">
-                                <input type="number" placeholder="Exp Month" required class="name">
-                                <i class="icon"><ion-icon name="calendar-outline"></ion-icon></i>
-                            </div>
-                        </div>
-                        <div class="input_box">
-                            <input type="number" placeholder="Exp Year" required class="name">
-                            <i class="icon"><ion-icon name="calendar-outline"></ion-icon></i>
-                        </div>
-                    </div>
+              <h2>Delivery Info</h2>
+              <form action="" method="post">
+                <!--Account Information Start-->
+                <h4>Shipping Address</h4>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="person-circle-outline"></ion-icon
+                    ></i>
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="person-circle-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="mail-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="Address"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="location-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="Apartment, Suite, etc, (optional)"
+                      class="name"
+                    />
+                    <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="City"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="Phone (optional)"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="call-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="text"
+                      placeholder="Postcode"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="locate-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <!--Account Information End-->
+
+                <!--DOB & Gender Start-->
+                <div class="input_group">
+                  <div class="input_box">
+                    <h4>Date Of Birth</h4>
+                    <input type="text" placeholder="DD" required class="dob" />
+                    <input type="text" placeholder="MM" required class="dob" />
+                    <input
+                      type="text"
+                      placeholder="YYYY"
+                      required
+                      class="dob"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <h4>Gender</h4>
+                    <input
+                      type="radio"
+                      name="gender"
+                      class="radio"
+                      id="b1"
+                      checked
+                    />
+                    <label for="b1">Male</label>
+                    <input type="radio" name="gender" class="radio" id="b2" />
+                    <label for="b2">Female</label>
+                  </div>
+                </div>
+                <!--DOB & Gender End-->
+
+                <!--Payment Details Start-->
+                <div class="input_group">
+                  <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <input
+                      type="radio"
+                      name="pay"
+                      class="radio"
+                      id="bc1"
+                      checked
+                    />
+                    <label for="bc1"
+                      ><span> <i></i>Credit Card</span></label
+                    >
+                    <input type="radio" name="pay" class="radio" id="bc2" />
+                    <label for="bc2"
+                      ><span> <i></i>Paypal</span></label
+                    >
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="tel"
+                      name=""
+                      class="name"
+                      placeholder="Name on Card"
+                      required
+                    />
+                    <i class="icon"
+                      ><ion-icon name="card-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="tel"
+                      name=""
+                      class="name"
+                      placeholder="Card Number 1111-2222-3333-4444"
+                      required
+                    />
+                    <i class="icon"
+                      ><ion-icon name="card-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
+                    <input
+                      type="tel"
+                      name=""
+                      class="name"
+                      placeholder="CVC 632"
+                      required
+                    />
+                    <i class="icon"
+                      ><ion-icon name="person-circle-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_group">
+                  <div class="input_box">
                     <div class="input_box">
-                        <input type="number" placeholder="Add Tip" class="name">
-                        <i class="icon"><ion-icon name="wallet-outline"></ion-icon></i>
+                      <input
+                        type="number"
+                        placeholder="Exp Month"
+                        required
+                        class="name"
+                      />
+                      <i class="icon"
+                        ><ion-icon name="calendar-outline"></ion-icon
+                      ></i>
                     </div>
-                    <!--Payment Details End-->
-        
-                    <!--Payment Details End-->
-        
-                    <div class="input_group">
-                        <div class="input_box">
-                            <button type="submit">PAY NOW</button>
-                        </div>
-                    </div>
-        
-                </form>
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="number"
+                      placeholder="Exp Year"
+                      required
+                      class="name"
+                    />
+                    <i class="icon"
+                      ><ion-icon name="calendar-outline"></ion-icon
+                    ></i>
+                  </div>
+                </div>
+                <div class="input_box">
+                  <input type="number" placeholder="Add Tip" class="name" />
+                  <i class="icon"
+                    ><ion-icon name="wallet-outline"></ion-icon
+                  ></i>
+                </div>
+                <!--Payment Details End-->
+
+                <!--Payment Details End-->
+
+                <div class="input_group">
+                  <div class="input_box">
+                    <button type="submit">PAY NOW</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1835,10 +1944,9 @@
       <!--
         - TESTIMONIALS, CTA & SERVICE
       -->
-        <div class="container">
-          <div class="testimonials-box">
-            </div>
-        </div>
+      <div class="container">
+        <div class="testimonials-box"></div>
+      </div>
     </main>
 
     <!--
@@ -2005,15 +2113,15 @@
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">Special Offers</a>
+              <a href="home.html" class="footer-nav-link">Special Offers</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">New products</a>
+              <a href="home.html" class="footer-nav-link">New products</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">Best sales</a>
+              <a href="home.html" class="footer-nav-link">Best sales</a>
             </li>
 
             <li class="footer-nav-item">
@@ -2059,15 +2167,15 @@
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">Special Offers</a>
+              <a href="home.html" class="footer-nav-link">Special Offers</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">New products</a>
+              <a href="home.html" class="footer-nav-link">New products</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="index.html" class="footer-nav-link">Best sales</a>
+              <a href="home.html" class="footer-nav-link">Best sales</a>
             </li>
 
             <li class="footer-nav-item">
