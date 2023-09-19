@@ -14,6 +14,8 @@
       href="./assets/images/logo/favicon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 
     <!--
     - custom css link
@@ -21,7 +23,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/destop.css" />
     <link rel="stylesheet" href="./assets/css/sproduct.css" />
-    <link rel="stylesheet" href="./assets/css/che.css" />
+    <link rel="stylesheet" href="./assets/css/checkout.css" />
+
 
     <!--
     - google font link
@@ -1695,84 +1698,135 @@
           </div>
 
           <div class="product-box">
-            <div class="small__container single-product">
-              <div class="row">
-                <div class="col-2">
-                  <img
-                    src="assets/images/products/airfryer1.jpg"
-                    width="100%"
-                    id="product-img"
-                  />
-                  <div class="small-img-row">
-                    <div class="small-img-col">
-                      <img
-                        src="assets/images/products/airfryer2.jpg"
-                        width="100%"
-                        class="small-img"
-                      />
+            <div class="wrapper">
+                <h2>Delivery Info</h2>
+                <form action="" method="post">
+                    <!--Account Information Start-->
+                    <h4>Shipping Address</h4>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="First Name" required class="name">
+                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Last Name" required class="name">
+                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
+                        </div>
                     </div>
-                    <div class="small-img-col">
-                      <img
-                        src="assets/images/products/kitchenware3.jpg"
-                        width="100%"
-                        class="small-img"
-                      />
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="email" placeholder="Email" required class="name">
+                            <i class="icon"><ion-icon name="mail-outline"></ion-icon></i>
+                        </div>
                     </div>
-                    <div class="small-img-col">
-                      <img
-                        src="assets/images/products/kitchenware4.jpg"
-                        width="100%"
-                        class="small-img"
-                      />
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Address" required class="name">
+                            <i class="icon"><ion-icon name="location-outline"></ion-icon></i>
+                        </div>
                     </div>
-                    <div class="small-img-col">
-                      <img
-                        src="assets/images/products/wallshelf2.jpg"
-                        width="100%"
-                        class="small-img"
-                      />
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Apartment, Suite, etc, (optional)" class="name">
+                            <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <p><a href="index.html" class="bread__crumb" >Home</a> / <a href="kctappilliance.html" class="bread__crumb">Kitchen Appliances</a></p>
-                  <h1>Multifunction Electric Air Fryer without Oil</h1>
-                  <h4>£147.29</h4>
-                  <select>
-                    <option>Select Color</option>
-                    <option>White</option>
-                    <option>Black</option>
-                    <option>Brown</option>
-                    <option>Grey</option>
-                    <option>Red</option>
-                  </select>
-                  <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>LARGE</option>
-                    <option>MEDUIM</option>
-                    <option>SMALL</option>
-                  </select>
-                  <input type="number" value="1" />
-                  <a href="cart.html" class="btn add-cart-btn">Add To Bag</a>
-                  <h3>Product Details</h3>
-                  <br />
-                  <p>
-                    <span>Overview:</span>
-                    Enjoy Food with Less Fat or Oil: With a Bonsen kitchen air
-                    fryer you can enjoy the same fried and crispy foods with
-                    less fat and grease which has 85% less fat than traditional
-                    deep frying methods Saves Your Time and Money: 360°
-                    circulation hot air system can make different gourmet dishes
-                    you love in a healthier, faster and easier way than in a
-                    conventional oven. It's designed to make it more
-                    energy-efficient and cook food more evenly
-                    <span>Package Content:</span>
-                    Air fryer *1
-                  </p>
-                </div>
-              </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="City" required class="name">
+                            <i class="icon"><ion-icon name="map-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Phone (optional)" required class="name">
+                            <i class="icon"><ion-icon name="call-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Postcode" required class="name">
+                            <i class="icon"><ion-icon name="locate-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <!--Account Information End-->
+        
+        
+                    <!--DOB & Gender Start-->
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Date Of Birth</h4>
+                            <input type="text" placeholder="DD" required class="dob">
+                            <input type="text" placeholder="MM" required class="dob">
+                            <input type="text" placeholder="YYYY" required class="dob">
+                        </div>
+                        <div class="input_box">
+                            <h4>Gender</h4>
+                            <input type="radio" name="gender" class="radio" id="b1" checked>
+                            <label for="b1">Male</label>
+                            <input type="radio" name="gender" class="radio" id="b2">
+                            <label for="b2">Female</label>
+                        </div>
+                    </div>
+                    <!--DOB & Gender End-->
+        
+                    <!--Payment Details Start-->
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Payment Details</h4>
+                            <input type="radio" name="pay" class="radio" id="bc1" checked>
+                            <label for="bc1"><span>
+                                    <i></i>Credit Card</span></label>
+                            <input type="radio" name="pay" class="radio" id="bc2">
+                            <label for="bc2"><span>
+                                    <i></i>Paypal</span></label>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="Name on Card" required>
+                            <i class="icon"><ion-icon name="card-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
+                            <i class="icon"><ion-icon name="card-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="CVC 632" required>
+                            <i class="icon"><ion-icon name="person-circle-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <div class="input_box">
+                                <input type="number" placeholder="Exp Month" required class="name">
+                                <i class="icon"><ion-icon name="calendar-outline"></ion-icon></i>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" placeholder="Exp Year" required class="name">
+                            <i class="icon"><ion-icon name="calendar-outline"></ion-icon></i>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <input type="number" placeholder="Add Tip" class="name">
+                        <i class="icon"><ion-icon name="wallet-outline"></ion-icon></i>
+                    </div>
+                    <!--Payment Details End-->
+        
+                    <!--Payment Details End-->
+        
+                    <div class="input_group">
+                        <div class="input_box">
+                            <button type="submit">PAY NOW</button>
+                        </div>
+                    </div>
+        
+                </form>
             </div>
           </div>
         </div>
@@ -1783,1148 +1837,8 @@
       -->
         <div class="container">
           <div class="testimonials-box">
-            <div class="product-main">
-  
-              <h2 class="title">You might also like</h2>
-
-              <div class="showcase-wrapper has-scrollbar">
-
-                <div class="showcase-container">
-                  <div class="product-grid">
-                      <div class="showcase">
-        
-                        <div class="showcase-banner">
-        
-                          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-        
-                          <p class="showcase-badge">-15%</p>
-        
-                          <div class="showcase-actions">
-        
-                            <button class="btn-action">
-                              <ion-icon name="heart-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="repeat-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="bag-add-outline"></ion-icon>
-                            </button>
-        
-                          </div>
-        
-                        </div>
-        
-                        <div class="showcase-content">
-        
-                          <a href="curtains.html" class="showcase-category">Curtains</a>
-        
-                          <a href="#">
-                            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                          </a>
-        
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </div>
-        
-                          <div class="price-box">
-                            <p class="price">$48.00</p>
-                            <del>$75.00</del>
-                          </div>
-        
-                        </div>
-        
-                      </div>
-                      <div class="showcase">
-        
-                        <div class="showcase-banner">
-        
-                          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-        
-                          <p class="showcase-badge">-15%</p>
-        
-                          <div class="showcase-actions">
-        
-                            <button class="btn-action">
-                              <ion-icon name="heart-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="repeat-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="bag-add-outline"></ion-icon>
-                            </button>
-        
-                          </div>
-        
-                        </div>
-        
-                        <div class="showcase-content">
-        
-                          <a href="curtains.html" class="showcase-category">Curtains</a>
-        
-                          <a href="#">
-                            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                          </a>
-        
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </div>
-        
-                          <div class="price-box">
-                            <p class="price">$48.00</p>
-                            <del>$75.00</del>
-                          </div>
-        
-                        </div>
-        
-                      </div>
-                      <div class="showcase">
-        
-                        <div class="showcase-banner">
-        
-                          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-        
-                          <p class="showcase-badge">-15%</p>
-        
-                          <div class="showcase-actions">
-        
-                            <button class="btn-action">
-                              <ion-icon name="heart-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="repeat-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="bag-add-outline"></ion-icon>
-                            </button>
-        
-                          </div>
-        
-                        </div>
-        
-                        <div class="showcase-content">
-        
-                          <a href="curtains.html" class="showcase-category">Curtains</a>
-        
-                          <a href="#">
-                            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                          </a>
-        
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </div>
-        
-                          <div class="price-box">
-                            <p class="price">$48.00</p>
-                            <del>$75.00</del>
-                          </div>
-        
-                        </div>
-        
-                      </div>
-                      <div class="showcase">
-        
-                        <div class="showcase-banner">
-        
-                          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-        
-                          <p class="showcase-badge">-15%</p>
-        
-                          <div class="showcase-actions">
-        
-                            <button class="btn-action">
-                              <ion-icon name="heart-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="repeat-outline"></ion-icon>
-                            </button>
-        
-                            <button class="btn-action">
-                              <ion-icon name="bag-add-outline"></ion-icon>
-                            </button>
-        
-                          </div>
-        
-                        </div>
-        
-                        <div class="showcase-content">
-        
-                          <a href="curtains.html" class="showcase-category">Curtains</a>
-        
-                          <a href="#">
-                            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                          </a>
-        
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </div>
-        
-                          <div class="price-box">
-                            <p class="price">$48.00</p>
-                            <del>$75.00</del>
-                          </div>
-        
-                        </div>
-        
-                      </div>
-              </div>
-                </div>
-                <div class="showcase-container">
-              <div class="product-grid">
-                  <div class="showcase">
-    
-                    <div class="showcase-banner">
-    
-                      <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                      <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-    
-                      <p class="showcase-badge">-15%</p>
-    
-                      <div class="showcase-actions">
-    
-                        <button class="btn-action">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-    
-                      </div>
-    
-                    </div>
-    
-                    <div class="showcase-content">
-    
-                      <a href="curtains.html" class="showcase-category">Curtains</a>
-    
-                      <a href="#">
-                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                      </a>
-    
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-    
-                      <div class="price-box">
-                        <p class="price">$48.00</p>
-                        <del>$75.00</del>
-                      </div>
-    
-                    </div>
-    
-                  </div>
-                  <div class="showcase">
-    
-                    <div class="showcase-banner">
-    
-                      <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                      <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-    
-                      <p class="showcase-badge">-15%</p>
-    
-                      <div class="showcase-actions">
-    
-                        <button class="btn-action">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-    
-                      </div>
-    
-                    </div>
-    
-                    <div class="showcase-content">
-    
-                      <a href="curtains.html" class="showcase-category">Curtains</a>
-    
-                      <a href="#">
-                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                      </a>
-    
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-    
-                      <div class="price-box">
-                        <p class="price">$48.00</p>
-                        <del>$75.00</del>
-                      </div>
-    
-                    </div>
-    
-                  </div>
-                  <div class="showcase">
-    
-                    <div class="showcase-banner">
-    
-                      <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                      <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-    
-                      <p class="showcase-badge">-15%</p>
-    
-                      <div class="showcase-actions">
-    
-                        <button class="btn-action">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-    
-                      </div>
-    
-                    </div>
-    
-                    <div class="showcase-content">
-    
-                      <a href="curtains.html" class="showcase-category">Curtains</a>
-    
-                      <a href="#">
-                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                      </a>
-    
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-    
-                      <div class="price-box">
-                        <p class="price">$48.00</p>
-                        <del>$75.00</del>
-                      </div>
-    
-                    </div>
-    
-                  </div>
-                  <div class="showcase">
-    
-                    <div class="showcase-banner">
-    
-                      <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                      <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-    
-                      <p class="showcase-badge">-15%</p>
-    
-                      <div class="showcase-actions">
-    
-                        <button class="btn-action">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-    
-                        <button class="btn-action">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-    
-                      </div>
-    
-                    </div>
-    
-                    <div class="showcase-content">
-    
-                      <a href="curtains.html" class="showcase-category">Curtains</a>
-    
-                      <a href="#">
-                        <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                      </a>
-    
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-    
-                      <div class="price-box">
-                        <p class="price">$48.00</p>
-                        <del>$75.00</del>
-                      </div>
-    
-                    </div>
-    
-                  </div>
-          </div>
-                </div>
-                <div class="showcase-container">
-          <div class="product-grid">
-              <div class="showcase">
-
-                <div class="showcase-banner">
-
-                  <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                  <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-                  <p class="showcase-badge">-15%</p>
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <div class="showcase-content">
-
-                  <a href="curtains.html" class="showcase-category">Curtains</a>
-
-                  <a href="#">
-                    <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                  </a>
-
-                  <div class="showcase-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-
-                  <div class="price-box">
-                    <p class="price">$48.00</p>
-                    <del>$75.00</del>
-                  </div>
-
-                </div>
-
-              </div>
-              <div class="showcase">
-
-                <div class="showcase-banner">
-
-                  <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                  <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-                  <p class="showcase-badge">-15%</p>
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <div class="showcase-content">
-
-                  <a href="curtains.html" class="showcase-category">Curtains</a>
-
-                  <a href="#">
-                    <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                  </a>
-
-                  <div class="showcase-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-
-                  <div class="price-box">
-                    <p class="price">$48.00</p>
-                    <del>$75.00</del>
-                  </div>
-
-                </div>
-
-              </div>
-              <div class="showcase">
-
-                <div class="showcase-banner">
-
-                  <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                  <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-                  <p class="showcase-badge">-15%</p>
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <div class="showcase-content">
-
-                  <a href="curtains.html" class="showcase-category">Curtains</a>
-
-                  <a href="#">
-                    <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                  </a>
-
-                  <div class="showcase-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-
-                  <div class="price-box">
-                    <p class="price">$48.00</p>
-                    <del>$75.00</del>
-                  </div>
-
-                </div>
-
-              </div>
-              <div class="showcase">
-
-                <div class="showcase-banner">
-
-                  <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-                  <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-                  <p class="showcase-badge">-15%</p>
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <div class="showcase-content">
-
-                  <a href="curtains.html" class="showcase-category">Curtains</a>
-
-                  <a href="#">
-                    <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-                  </a>
-
-                  <div class="showcase-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-
-                  <div class="price-box">
-                    <p class="price">$48.00</p>
-                    <del>$75.00</del>
-                  </div>
-
-                </div>
-
-              </div>
-      </div>
-                </div>
-                <div class="showcase-container">
-      <div class="product-grid">
-          <div class="showcase">
-
-            <div class="showcase-banner">
-
-              <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-              <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-              <p class="showcase-badge">-15%</p>
-
-              <div class="showcase-actions">
-
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-
-              </div>
-
             </div>
-
-            <div class="showcase-content">
-
-              <a href="curtains.html" class="showcase-category">Curtains</a>
-
-              <a href="#">
-                <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-              </a>
-
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-
-              <div class="price-box">
-                <p class="price">$48.00</p>
-                <del>$75.00</del>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="showcase">
-
-            <div class="showcase-banner">
-
-              <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-              <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-              <p class="showcase-badge">-15%</p>
-
-              <div class="showcase-actions">
-
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </div>
-
-            <div class="showcase-content">
-
-              <a href="curtains.html" class="showcase-category">Curtains</a>
-
-              <a href="#">
-                <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-              </a>
-
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-
-              <div class="price-box">
-                <p class="price">$48.00</p>
-                <del>$75.00</del>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="showcase">
-
-            <div class="showcase-banner">
-
-              <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-              <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-              <p class="showcase-badge">-15%</p>
-
-              <div class="showcase-actions">
-
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </div>
-
-            <div class="showcase-content">
-
-              <a href="curtains.html" class="showcase-category">Curtains</a>
-
-              <a href="#">
-                <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-              </a>
-
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-
-              <div class="price-box">
-                <p class="price">$48.00</p>
-                <del>$75.00</del>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="showcase">
-
-            <div class="showcase-banner">
-
-              <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-              <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-              <p class="showcase-badge">-15%</p>
-
-              <div class="showcase-actions">
-
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </div>
-
-            <div class="showcase-content">
-
-              <a href="curtains.html" class="showcase-category">Curtains</a>
-
-              <a href="#">
-                <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-              </a>
-
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-
-              <div class="price-box">
-                <p class="price">$48.00</p>
-                <del>$75.00</del>
-              </div>
-
-            </div>
-
-          </div>
-  </div>
-                </div>
-                <div class="showcase-container">
-  <div class="product-grid">
-      <div class="showcase">
-
-        <div class="showcase-banner">
-
-          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-          <p class="showcase-badge">-15%</p>
-
-          <div class="showcase-actions">
-
-            <button class="btn-action">
-              <ion-icon name="heart-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="eye-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="repeat-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="bag-add-outline"></ion-icon>
-            </button>
-
-          </div>
-
         </div>
-
-        <div class="showcase-content">
-
-          <a href="curtains.html" class="showcase-category">Curtains</a>
-
-          <a href="#">
-            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-          </a>
-
-          <div class="showcase-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-
-          <div class="price-box">
-            <p class="price">$48.00</p>
-            <del>$75.00</del>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="showcase">
-
-        <div class="showcase-banner">
-
-          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-          <p class="showcase-badge">-15%</p>
-
-          <div class="showcase-actions">
-
-            <button class="btn-action">
-              <ion-icon name="heart-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="eye-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="repeat-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="bag-add-outline"></ion-icon>
-            </button>
-
-          </div>
-
-        </div>
-
-        <div class="showcase-content">
-
-          <a href="curtains.html" class="showcase-category">Curtains</a>
-
-          <a href="#">
-            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-          </a>
-
-          <div class="showcase-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-
-          <div class="price-box">
-            <p class="price">$48.00</p>
-            <del>$75.00</del>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="showcase">
-
-        <div class="showcase-banner">
-
-          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-          <p class="showcase-badge">-15%</p>
-
-          <div class="showcase-actions">
-
-            <button class="btn-action">
-              <ion-icon name="heart-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="eye-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="repeat-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="bag-add-outline"></ion-icon>
-            </button>
-
-          </div>
-
-        </div>
-
-        <div class="showcase-content">
-
-          <a href="curtains.html" class="showcase-category">Curtains</a>
-
-          <a href="#">
-            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-          </a>
-
-          <div class="showcase-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-
-          <div class="price-box">
-            <p class="price">$48.00</p>
-            <del>$75.00</del>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="showcase">
-
-        <div class="showcase-banner">
-
-          <img src="./assets/images/products/cotton2.jpg" alt="High Shading Solid Chenille Curtain" width="300" class="product-img default">
-          <img src="./assets/images/products/cotton17.png" alt="High Shading Solid Chenille Curtain" width="300" class="product-img hover">
-
-          <p class="showcase-badge">-15%</p>
-
-          <div class="showcase-actions">
-
-            <button class="btn-action">
-              <ion-icon name="heart-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="eye-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="repeat-outline"></ion-icon>
-            </button>
-
-            <button class="btn-action">
-              <ion-icon name="bag-add-outline"></ion-icon>
-            </button>
-
-          </div>
-
-        </div>
-
-        <div class="showcase-content">
-
-          <a href="curtains.html" class="showcase-category">Curtains</a>
-
-          <a href="#">
-            <h3 class="showcase-title">High Shading Solid Chenille Curtain</h3>
-          </a>
-
-          <div class="showcase-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-
-          <div class="price-box">
-            <p class="price">$48.00</p>
-            <del>$75.00</del>
-          </div>
-
-        </div>
-
-      </div>
-</div>
-                </div>
-
-          </div>
-            </div>
-          </div>
-        </div>
-
-         <!-- Pop-up container -->
-    <div id="popup" class="popup">
-      <div class="popup-content">
-          <span class="close" onclick="closePopup()">&times;</span>
-          <img id="popup-image" src="assets/images/products/airfryer1.jpg" alt="">
-          <h2 id="popup-name">You Added</h2>
-          <p>Quantity: <span id="popup-quantity"></span></p>
-      </div>
-  </div>
-
     </main>
 
     <!--

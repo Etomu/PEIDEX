@@ -8,8 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("../images/banner15.jpg");
+    background: url("../images/banner5.jpg");
     background-size: cover;
+    background-position: 80%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
