@@ -650,8 +650,9 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-subtitle {
-  color: var(--salmon-pink);
+  color: var(--eerie-black);
   font-size: var(--fs-7);
+  text-decoration: underline dotted;
   font-weight: var(--weight-500);
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -670,7 +671,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .banner-btn {
   background: var(--salmon-pink);
-  color: var(--white);
+  color: var(--eerie-black);
   width: max-content;
   font-size: var(--fs-11);
   font-weight: var(--weight-600);
@@ -1761,18 +1762,24 @@ footer {
     top: 50%;
     right: auto;
     bottom: auto;
+    background: #fff;
     transform: translateY(-50%);
     max-width: 320px;
   }
 
-  .banner-subtitle { --fs-7: 1rem; }
+  .banner-subtitle { --fs-9: 1rem; text-decoration: underline dotted;}
 
   .banner-text {
     display: block;
-    color: var(--sonic-silver);
-    font-size: var(--fs-7);
+    color: var(--salmon-pink);
+    font-size: var(--fs-9);
     font-weight: var(--weight-500);
     margin-bottom: 10px;
+  }
+
+  .banner-title {
+    color: var(--eerie-black);
+    font-size: var(--fs-4);
   }
 
   .banner-text b { font-size: var(--fs-2); }
@@ -1880,13 +1887,13 @@ footer {
     max-width: 320px;
   }
 
-  .banner-subtitle { --fs-7: 1rem; }
+  .banner-subtitle { --fs-7: 1rem; text-decoration: underline dotted;}
 
   .banner-text {
     display: block;
-    color: var(--sonic-silver);
+    color: var(--salmon-pink);
     font-size: var(--fs-7);
-    font-weight: var(--weight-500);
+    font-weight: var(--weight-800);
     margin-bottom: 10px;
   }
 
@@ -2118,7 +2125,7 @@ footer {
 
   .banner-content { max-width: 380px; }
 
-  .banner-subtitle { --fs-7: 1.25rem; }
+  .banner-subtitle { --fs-7: 1.25rem; text-decoration: underline dotted;}
 
   .banner-text { --fs-7: 1.125rem; }
 
@@ -2430,7 +2437,7 @@ footer {
     max-width: 400px;
   }
 
-  .banner-subtitle { --fs-7: 1.625rem; }
+  .banner-subtitle { --fs-7: 1.625rem; text-decoration: underline dotted;}
 
   .banner-text { --fs-7: 1.375rem; }
 
