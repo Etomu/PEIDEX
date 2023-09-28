@@ -136,3 +136,29 @@ addToCartButtons.forEach((button, index) => {
         openPopup(product.imageSrc, product.productName, product.productQuantity);
     });
 });
+
+------------------------------
+// script.js
+const specialRequestLink = document.getElementById('special-request-link');
+const popupContainer = document.getElementById('popup-container');
+const closePopupButton = document.getElementById('close-popup');
+
+// Function to open the popup
+function openPopup() {
+    popupContainer.style.display = 'flex';
+}
+
+// Function to close the popup
+function closePopup() {
+    popupContainer.style.display = 'none';
+}
+
+// Event listeners
+specialRequestLink.addEventListener('click', openPopup);
+closePopupButton.addEventListener('click', closePopup);
+popupContainer.addEventListener('click', function (event) {
+    if (event.target === popupContainer) {
+        closePopup();
+    }
+});
+-------------------------------
