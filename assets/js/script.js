@@ -137,7 +137,6 @@ addToCartButtons.forEach((button, index) => {
     });
 });
 
-------------------------------
 // script.js
 const specialRequestLink = document.getElementById('special-request-link');
 const popupContainer = document.getElementById('popup-container');
@@ -161,4 +160,4 @@ popupContainer.addEventListener('click', function (event) {
         closePopup();
     }
 });
--------------------------------
+
