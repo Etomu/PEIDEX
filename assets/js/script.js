@@ -137,27 +137,17 @@ addToCartButtons.forEach((button, index) => {
     });
 });
 
-// script.js
-const specialRequestLink = document.getElementById('special-request-link');
-const popupContainer = document.getElementById('popup-container');
-const closePopupButton = document.getElementById('close-popup');
-
-// Function to open the popup
-function openPopup() {
-    popupContainer.style.display = 'flex';
-}
-
-// Function to close the popup
-function closePopup() {
-    popupContainer.style.display = 'none';
-}
-
-// Event listeners
-specialRequestLink.addEventListener('click', openPopup);
-closePopupButton.addEventListener('click', closePopup);
-popupContainer.addEventListener('click', function (event) {
-    if (event.target === popupContainer) {
-        closePopup();
-    }
+// Get the elements by their ID
+var popupLink = document.getElementById("popup-link");
+var popupWindow = document.getElementById("popup-window");
+var closeButton = document.getElementById("close-button");
+// Show the pop-up window when the link is clicked
+popupLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  popupWindow.style.display = "block";
+});
+// Hide the pop-up window when the close button is clicked
+closeButton.addEventListener("click", function() {
+  popupWindow.style.display = "none";
 });
 

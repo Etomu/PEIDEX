@@ -15,7 +15,7 @@ body {
 .wrapper {
     position: relative;
     width: 800px;
-    height: 860px;
+    height: 780px;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     background: transparent;
@@ -25,7 +25,7 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .wrapper .form-box {
@@ -36,7 +36,8 @@ body {
 .form-box h2 {
     font-size: 2.5rem;
     color: hsl(29, 90%, 65%);
-    margin-bottom: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 .form-box p {
