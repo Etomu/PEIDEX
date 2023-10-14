@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url("../images/banner5.jpg");
+    background: url("../images/bgg3.jpg");
     background-position: center 30%;
     background-size: cover;
     display: flex;
@@ -15,17 +15,17 @@ body {
 .wrapper {
     position: relative;
     width: 800px;
-    height: 780px;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    height: 650px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(40px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .wrapper .form-box {
@@ -34,11 +34,18 @@ body {
 }
 
 .form-box h2 {
-    font-size: 2.5rem;
-    color: hsl(29, 90%, 65%);
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: underline wavy;
+    font-weight: 900;
+    color: hsl(0, 0%, 24%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
+    transition: .5s;
+}
+.form-box h2:hover {
+    color: hsl(29, 100%, 50%);
 }
 .form-box p {
     font-size: 0.9rem;
@@ -58,7 +65,7 @@ body {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid hsl(29, 90%, 65%);
+    border-bottom: 2px solid hsl(0, 0%, 24%);
     margin: 30px 0;
 }
 
@@ -68,7 +75,7 @@ body {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1rem;
-    color: hsl(29, 90%, 65%);
+    color: hsl(0, 0%, 24%);
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -90,7 +97,7 @@ body {
     padding: 0 35px 0 5px;
 }
 .input-box select option{
-    background: hsl(0, 0%, 27%);
+    background: hsl(0, 0%, 19%);
     font-size: 1rem;
     font-weight: 600;
     padding: 0 35px 0 5px;
@@ -101,7 +108,7 @@ body {
     height: 45px;
     padding: 0 35px 0 5px;
     margin-top: 1rem;
-    background: hsl(29, 90%, 65%);
+    background: hsl(0, 0%, 24%);
     border: none;
     outline: none;
     border-radius: 6px;
@@ -112,8 +119,8 @@ body {
     transition: .5s;
 }
 .btn:hover {
-    background: transparent;
-    color: hsl(0, 0%, 13%);
+    background: hsl(29, 100%, 50%);
+    color: hsl(0, 0%, 0%);
 }
 .btn a {
     font-size: 1rem;
@@ -132,7 +139,7 @@ body {
 @media screen and (max-width: 600px) {
     .wrapper {
         width: 300px;
-        height: 400px;
+        height: 460px;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-top: 5rem;
@@ -149,23 +156,23 @@ body {
     .form-box h2 {
         margin-top: 2rem;
         margin-bottom: 2.5rem;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     .form-box p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .form-box p span {
         font-size: 0.6rem;
     }
     .input-box select {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .input-box label {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .btn {
         font-size: 0.6rem;
-        width: 40%;
+        width: 100%;
         height: 30px;
         padding: 0 35px 0 30px;
     }
