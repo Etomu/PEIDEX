@@ -25,6 +25,15 @@ toastCloseBtn.addEventListener('click', function () {
   notificationToast.classList.add('closed');
 });
 
+// alert toast variables
+const alertToast = document.querySelector('[data.alert-toast]');
+const alertToastCloseBtn = document.querySelector('[data.alert-toast-close]');
+
+// alert toast eventListener
+alertToastCloseBtn.addEventListener('click', function () {
+  alertToast.classList.add('closed1');
+});
+
 
 
 
