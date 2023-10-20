@@ -402,7 +402,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     transform: translateX(calc(-100% - 40px));
     transition: 0.5s ease-in-out;
     z-index: 5;
-    animation: slideInOut 10s ease-in-out infinite;
+    animation: slideInOut 15s ease-in-out infinite;
+    animation-duration: 20s;
   }
   
   @keyframes slideInOut {

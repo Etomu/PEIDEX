@@ -160,3 +160,69 @@ closeButton.addEventListener("click", function() {
   popupWindow.style.display = "none";
 });
 
+$(document).ready(function() {
+  $('#emailButton').click(function() {
+    window.location.href = "mailto:tgeee27@gmail.com";
+  });
+});
+
+$(document).ready(function() {
+  $('#location').select2({
+    data: [
+      { id: 'Albania', text: 'Albania' },
+      { id: 'Algeria', text: 'Algeria' },
+      { id: 'Angola', text: 'Angola' },
+      { id: 'Australia', text: 'Australia' },
+      { id: 'Austria', text: 'Austria' },
+      { id: 'Belarus', text: 'Belarus' },
+      { id: 'Belgium', text: 'Belgium' },
+      { id: 'Benin', text: 'Benin' },
+      { id: 'Botswana', text: 'Botswana' },
+      { id: 'Burkina Faso', text: 'Burkina Faso' },
+      { id: 'Cameroon', text: 'Cameroon' },
+      { id: 'Central African Republic', text: 'Central African Republic' },
+      { id: 'Chad', text: 'Chad' },
+      { id: 'Cyprus', text: 'Cyprus' },
+      { id: 'Czech Republic', text: 'Czech Republic' },
+      { id: 'Denmark', text: 'Denmark' },
+      { id: 'Egypt', text: 'Egypt' },
+      { id: 'Ethiopia', text: 'Ethiopia' },
+      { id: 'Finland', text: 'Finland' },
+      { id: 'France', text: 'France' },
+      { id: 'Germany', text: 'Germany' },
+      { id: 'Ghana', text: 'Ghana' },
+      { id: 'Greece', text: 'Greece' },
+      { id: 'Hungary', text: 'Hungary' },
+      { id: 'Iceland', text: 'Iceland' },
+      { id: 'Ireland', text: 'Ireland' },
+      { id: 'Italy', text: 'Italy' },
+      { id: 'Kenya', text: 'Kenya' },
+      { id: 'Madagascar', text: 'Madagascar' },
+      { id: 'Malawi', text: 'Malawi' },
+      { id: 'Mali', text: 'Mali' },
+      { id: 'Morocco', text: 'Morocco' },
+      { id: 'Netherlands', text: 'Netherlands' },
+      { id: 'Niger', text: 'Niger' },
+      { id: 'Nigeria', text: 'Nigeria' },
+      { id: 'Norway', text: 'Norway' },
+      { id: 'Poland', text: 'Poland' },
+      { id: 'Portugal', text: 'Portugal' },
+      { id: 'Senegal', text: 'Senegal' },
+      { id: 'Serbia', text: 'Serbia' },
+      { id: 'Sierra Leone', text: 'Sierra Leone' },
+      { id: 'Somalia', text: 'Somalia' },
+      { id: 'South Africa', text: 'South Africa' },
+      { id: 'South Sudan', text: 'South Sudan' },
+      { id: 'Spain', text: 'Spain' },
+      { id: 'Sudan', text: 'Sudan' },
+      { id: 'Sweden', text: 'Sweden' },
+      { id: 'Switzerland', text: 'Switzerland' },
+      { id: 'Togo', text: 'Togo' },
+      { id: 'United Kingdom', text: 'United Kingdom' },
+      { id: 'United States', text: 'United States' },
+      { id: 'Zimbabwe', text: 'Zimbabwe' },
+      // Add the rest of the countries here
+    ],
+    placeholder: 'Search for your country',
+  });
+});
