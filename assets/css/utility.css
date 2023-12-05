@@ -5,6 +5,8 @@
   --text-dark: #18181b;
   --text-light: #71717a;
   --white: #ffffff;
+  --black: #000000;
+  --sandy-brown: hsl(60, 14%, 1%);
   --max-width: 1200px;
   --header-font: "Lora", serif;
   --logo-font: "Caesar+Dressing";
@@ -83,6 +85,8 @@ header {
 nav {
   max-width: var(--max-width);
   margin: auto;
+  border-bottom: 1px solid #000000;
+  border-bottom-style: inset;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
@@ -93,11 +97,9 @@ nav {
   flex: 1;
 }
 
-.nav__logo a {
-  font-size: 1.5rem;
-  font-weight: 900;
-  font-family: var(--logo2-font);
-  color: var(--white);
+.nav__logo a img {
+  width: 120px;
+  height: 36px;
 }
 
 .nav__links {
@@ -133,7 +135,7 @@ nav {
 .nav__menu__btn {
   display: none;
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 .nav__actions {
@@ -590,11 +592,9 @@ nav {
   gap: 2rem;
 }
 
-.footer__logo h4 a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: var(--logo2-font);
-  color: var(--white);
+.footer__logo h4 a img {
+  width: 120px;
+  height: 36px;
 }
 
 .footer__logo p {
@@ -690,7 +690,9 @@ nav {
     position: fixed;
     width: 100%;
     padding: 1rem;
-    background-color: hsl(0, 0%, 27%);
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     z-index: 99;
   }
 
