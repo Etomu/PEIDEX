@@ -1883,6 +1883,152 @@
                 </div>
               </div>
             </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-button">
+                  Product Description and Specifications
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Dell Inspiron 7700 All in one Desktop PC Overview
+                    <br />
+                    Turn your house into a homeVivid views: With an InfinityEdge
+                    FHD display and an 8mm border, this 27-inch Full HD display
+                    looks incredible from nearly every angle.
+
+                    <br />
+                    Modern set-up: Experience improved stability and fewer
+                    distractions with a space-efficient stand, a forward-firing
+                    sound bar, and keyboard storage underneath your display.
+
+                    <br />
+                    Sweeter sound: With its forward-firing sound bar equipped
+                    with speakers professionally tuned with Waves MaxxAudio®
+                    Pro, you not only get a stylish look, but even better sound
+                    quality. Style your space: The sleek silver color option
+                    offers two choices of stands to match: Arch or A-Frame. The
+                    Arch stand is an easel like stand coupled with forward
+                    facing silver mesh speakers to enhance your audio
+                    experience. With the A-Frame stand, your display rests on
+                    dual triangular bases. A-Frame is paired with forward facing
+                    speakers in a matching mesh. High-tech made
+                    simpleAll-in-one: Save space and cut back on hassle with a
+                    single piece of technology that contains everything you
+                    need—computer, monitor and speakers all in one.
+
+                    <br />
+
+                    <br />KEY FEATURES Processor: 12th Generation Intel® Core™
+                    i7-1255U (12 MB Cache, 4 Core, up to 4.1 GHz) Storage: 1TB
+                    HDD + 512GB, M.2, PCIe NVMe Gen3 x4, SSD Memory: 16GB, 2 x
+                    16 GB, DDR4, 2666 MHz Screen: 27inches FHD Touchscreen
+                    Display Graphics: NVIDIA® GeForce® MX™ 330, 2 GB, GDDR5
+                    Keyboard and Mouse Operating System: Windows 10 Pro Optical
+                    Drive not included SKU: DE168CL4V7J1KNAFAMZ Product Line:
+                    Apt Multimedia Services Model: Inspiron 7700 Weight (kg):
+                    2.5 Color: Silver
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button">Product Images</button>
+                <div class="accordion-content">
+                  <div class="accordion-image-grid">
+                    <img
+                      src="./assets/images/products/destop1.1.jpg"
+                      alt="Product Image 1"
+                    />
+                    <img
+                      src="./assets/images/products/destop1.2.jpg"
+                      alt="Product Image 2"
+                    />
+                    <img
+                      src="./assets/images/products/destop1.3.jpg"
+                      alt="Product Image 3"
+                    />
+                    <img
+                      src="./assets/images/products/destop1.4.jpg"
+                      alt="Product Image 3"
+                    />
+                    <img
+                      src="./assets/images/products/destop1.5.jpg"
+                      alt="Product Image 3"
+                    />
+                    <img
+                      src="./assets/images/products/HUAWEI MateBook E Go 2023.jpeg"
+                      alt="Product Image 3"
+                    />
+                    <img
+                      src="./assets/images/products/HUAWEI MateBook E-Go 2023.jpg"
+                      alt="Product Image 3"
+                    />
+                    <img
+                      src="./assets/images/products/HUAWEI MateBook E-Go-2023.jpg"
+                      alt="Product Image 3"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button">Write a Review</button>
+                <div class="accordion-content">
+                  <div class="review-section">
+                    <div class="review-form">
+                      <form action="#">
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Number" />
+                        <input type="email" placeholder="Email" />
+                        <textarea
+                          rows="5"
+                          placeholder="Write your review here..."
+                        ></textarea>
+                        <button type="submit">Submit Review</button>
+                      </form>
+                    </div>
+                    <div class="review-list">
+                      <ul>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                        <li>John Doe</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Perferendis dolor deleniti perspiciatis! Omnis,
+                          numquam magni.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3694,6 +3840,27 @@
       }
 
       window.addEventListener("resize", slideImage);
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach(function (item) {
+          const button = item.querySelector(".accordion-button");
+          const content = item.querySelector(".accordion-content");
+
+          button.addEventListener("click", function () {
+            const isOpen = content.style.maxHeight !== "0px";
+
+            if (isOpen) {
+              content.style.maxHeight = "0px";
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        });
+      });
     </script>
 
     <!--
