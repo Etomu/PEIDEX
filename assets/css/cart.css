@@ -165,6 +165,12 @@
     color: hsl(0, 0%, 13%);
 }
 
+@media (min-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .product-box .wrapper {
         max-width: 900px;
